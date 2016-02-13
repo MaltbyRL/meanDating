@@ -1,2 +1,2 @@
-http://maltbyrl.github.io/meanDating
+#meanDating
 
