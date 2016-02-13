@@ -1,15 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/css/style.css' />
-    <script src="/bower_components/angular/angular.min.js"></script>
-    <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
-    <script src="/js/bundle.js"></script>
-  </head>
-  <body ng-app='someApp'>
-    <h1>Angular</h1>
 
+<head>
+  <title>
+    Dating Madness
+  </title>
+  <link rel='stylesheet' href='/css/style.css' />
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+  <script src='https://code.jquery.com/jquery-2.2.0.min.js'></script>
+  <script src="/bower_components/angular/angular.min.js"></script>
+  <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="/js/bundle.js"></script>
+</head>
+
+<body ng-app='someApp'>
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed">
+          <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+        <a href="/" class="navbar-brand">Dating Madness</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/">Home</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <button ui-sref="login" class="btn btn-default">login</button>
+          <button ui-sref="register" class="btn btn-default">register</button>
+          <button ui-sref="users" class="btn btn-default">users</button>
+          <button ui-sref="profile" href="/profile" class="btn btn-default">profile</button>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
     <ui-view></ui-view>
-  </body>
+  </div>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,10 @@
+
+<div class="container" style="background-image: url('http://bearrepublic.com/wp-content/uploads/2014/01/valentines-heart.jpg'); height: 90vw;"><h1>users</h1>
+<div>
+  <div class= "usersPage" ng-repeat="user in users track by $index">{{user.name}}
+    <row style= "">
+    <img src={{user.picture}} alt="profile Picture" height="150px"> <br>
+    <div>{{user.description}}</div>
+    </row>
+  </div>
+</div>
