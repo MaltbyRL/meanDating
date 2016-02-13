@@ -1,13 +1,14 @@
 {
-  "name": "newmeanstack",
+  "name": "meanDating",
   "version": "0.0.0",
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "setup": "rm -rf public node_modules && npm i && bower i && gulp build"
+    "setup": "rm -rf public node_modules && npm i && bower i && gulp build",
+    "postinstall": "bower i"
   },
   "engines": {
-    "node":"4.2.6"
+    "node": "4.2.4"
   },
   "dependencies": {
     "angular": "^1.5.0",
@@ -18,8 +19,9 @@
     "debug": "~2.2.0",
     "ejs": "~2.3.3",
     "express": "~4.13.1",
+    "firebase": "^2.4.0",
     "gulp": "^3.9.1",
-    "gulp-concat": "^2.6.0",  
+    "gulp-concat": "^2.6.0",
     "gulp-sass": "^2.2.0",
     "jwt-simple": "^0.4.1",
     "mongoose": "^4.4.3",
